@@ -13,7 +13,7 @@ func max(array []string) string {
 }
 
 func reverse(array []int64) []int64 {
-	var resultSlice []int64
+	resultSlice := make([]int64, 0, len(array))
 	for i := len(array) - 1; i >= 0; i-- {
 		resultSlice = append(resultSlice, array[i])
 	}
